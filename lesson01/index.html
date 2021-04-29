@@ -31,14 +31,23 @@
 
     <script>
       var viewer = new Cesium.Viewer('cesiumContainer',{
+        //1.geocoder:查找位置工具，查找到之后会将镜头对准找到的地址，默认使用bing地图.
+        //2.Home Button :视角返回初始位置.
+        //3.Scene Mode Picker:选择视角的模式，有三种:3D，2D，哥伦布视图(CV).
+        //4.Base Layer Picker:图层选择器，选择要显示的地图服务和地形服务.
+        //5.Navigation Help Button :导航帮助按钮，显示默认的地图控制帮助.
+        //6.Animation :动画器件，控制视图动画的播放速度.
+        //7.Timeline :时间线,指示当前时间，并允许用户跳到特定的时间.
+        //8.Credits Display :版权显示，显示数据归属，必选.
+        //9.Fullscreen Button :全屏按钮.
         geocoder:false,
         homeButton:false,
         sceneModePicker:false,
-        baseLayerPicker:false,
+        // baseLayerPicker:false,
         navigationHelpButton:false,
         animation:false,
-        creditContainer:"credit",
         timeline:false,
+        creditContainer:"credit",
         fullscreenButton:false,
         vrButton:false,
       });
